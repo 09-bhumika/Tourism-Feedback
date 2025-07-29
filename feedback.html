@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Campaign Type:</label>
+      <select id="campaign" required>
+        <option value="TV">TV</option>
+        <option value="Online">Online</option>
+        <option value="Print">Print</option>
+      </select>
+
+      <label>Rating (1 to 5):</label>
+      <input type="number" id="rating" min="1" max="5" required>
+
+      <label>Comments:</label>
+      <textarea id="comments" rows="4" required style="font-size: 18px;"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
