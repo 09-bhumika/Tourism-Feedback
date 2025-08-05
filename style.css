@@ -1,146 +1,78 @@
-/* Base styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  font-family: Arial, sans-serif;
+  background-color: #A8E6CF; /* Light mint */
   margin: 0;
   padding: 20px;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
 }
 
-/* Star Background Container */
-#stars-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.star {
-  position: absolute;
-  bottom: -20px;
-  width: 4px;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  opacity: 0.6;
-  animation: floatStar 10s linear infinite;
-}
-
-.star::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: white;
-  opacity: 0.4;
-  filter: blur(2px);
-}
-
-@keyframes floatStar {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateY(-400px) scale(0.6);
-    opacity: 0;
-  }
-}
-
-/* Centered container with a modern card look */
 .container {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(5px);
-  max-width: 700px;
+  background: #ffffff;
+  max-width: 600px;
   margin: auto;
-  padding: 40px 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.container:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #81C8B2; /* Medium mint shadow */
 }
 
 .center {
   text-align: center;
 }
 
-/* Headings */
 h1, h2 {
-  color: #222;
-  margin-bottom: 20px;
+  color: #004D40; /* Dark mint */
 }
 
-/* Form elements */
 input, select, textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px;
   margin-top: 8px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: #fdfdfd;
-  transition: border-color 0.3s;
+  border: 1px solid #81C8B2; /* Medium mint border */
+  border-radius: 5px;
+  background-color: #f8fdfc; /* very light mint background */
 }
 
 input:focus, select:focus, textarea:focus {
-  border-color: #007bff;
+  border-color: #4DB6AC; /* Mint */
   outline: none;
 }
 
-/* Button */
 .btn {
-  background-color: #007bff;
+  background-color: #00796B; /* Darker mint */
   color: white;
-  padding: 12px 30px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 121, 107, 0.3);
 }
 
 .btn:hover {
-  background-color: #0056b3;
-  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
+  background-color: #004D40; /* Dark mint */
+  box-shadow: 0 6px 12px rgba(0, 77, 64, 0.4);
 }
 
-/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
-  background-color: #fff;
-  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-  font-size: 15px;
-  color: #333;
+  box-shadow: 0 0 10px #81C8B2;
 }
 
 th {
-  background-color: #f0f0f0;
-  font-weight: 600;
+  background-color: #4DB6AC; /* Green mint */
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  color: #004D40; /* Dark mint */
 }
