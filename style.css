@@ -1,54 +1,93 @@
+/* Base styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
 }
 
+/* Centered container with a modern card look */
 .container {
-  background: white;
-  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  max-width: 700px;
   margin: auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .center {
   text-align: center;
 }
 
+/* Headings */
 h1, h2 {
-  color: #333;
+  color: #222;
+  margin-bottom: 20px;
 }
 
+/* Form elements */
 input, select, textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px 14px;
   margin-top: 8px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s;
 }
 
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
 .btn {
   background-color: #007bff;
   color: white;
-  padding: 12px 25px;
+  padding: 12px 30px;
   border: none;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
   text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: 600;
 }
