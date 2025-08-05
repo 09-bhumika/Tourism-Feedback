@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #A8E6CF; /* Light mint */
+  background-color: #F8D7DA; /* Light pinkish red */
   margin: 0;
   padding: 20px;
 }
@@ -11,7 +11,7 @@ body {
   margin: auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #81C8B2; /* Medium mint shadow */
+  box-shadow: 0 0 10px #D88C8C; /* Medium red shadow */
 }
 
 .center {
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2 {
-  color: #004D40; /* Dark mint */
+  color: #8B0000; /* Dark red */
 }
 
 input, select, textarea {
@@ -27,18 +27,18 @@ input, select, textarea {
   padding: 10px;
   margin-top: 8px;
   margin-bottom: 20px;
-  border: 1px solid #81C8B2; /* Medium mint border */
+  border: 1px solid #D88C8C; /* Medium red border */
   border-radius: 5px;
-  background-color: #f8fdfc; /* very light mint background */
+  background-color: #fff5f5; /* Very light red background */
 }
 
 input:focus, select:focus, textarea:focus {
-  border-color: #4DB6AC; /* Mint */
+  border-color: #E57373; /* Light red */
   outline: none;
 }
 
 .btn {
-  background-color: #00796B; /* Darker mint */
+  background-color: #C62828; /* Dark red */
   color: white;
   padding: 12px 25px;
   border: none;
@@ -46,12 +46,12 @@ input:focus, select:focus, textarea:focus {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 121, 107, 0.3);
+  box-shadow: 0 4px 8px rgba(198, 40, 40, 0.3);
 }
 
 .btn:hover {
-  background-color: #004D40; /* Dark mint */
-  box-shadow: 0 6px 12px rgba(0, 77, 64, 0.4);
+  background-color: #8B0000; /* Darker red */
+  box-shadow: 0 6px 12px rgba(139, 0, 0, 0.4);
 }
 
 table {
@@ -61,11 +61,11 @@ table {
   background-color: #ffffff;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 10px #81C8B2;
+  box-shadow: 0 0 10px #D88C8C;
 }
 
 th {
-  background-color: #4DB6AC; /* Green mint */
+  background-color: #E57373; /* Soft red */
   color: white;
   padding: 10px;
 }
@@ -74,5 +74,5 @@ td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  color: #004D40; /* Dark mint */
+  color: #8B0000; /* Dark red */
 }
