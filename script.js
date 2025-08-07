@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
 
       const name = document.getElementById("name").value;
-      const campaign = document.getElementById("movie").value;
+      const movie = document.getElementById("movie").value;
       const rating = document.getElementById("rating").value;
       const comments = document.getElementById("comments").value;
 
@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
